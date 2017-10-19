@@ -23,6 +23,15 @@ import com.brightsconsulting.sgml4j.exceptions.InvalidNodeNameException;
 
 public class SGMLParser {
 
+	/**
+	 * SGML形式のファイルを読み込んでXML形式とする
+	 * @param file
+	 * @return
+	 * @throws InvalidNodeNameException
+	 * @throws IOException
+	 * @throws ParserConfigurationException
+	 * @throws SAXException
+	 */
 	public Document parse(File file)
 			throws InvalidNodeNameException, IOException, ParserConfigurationException, SAXException {
 		FileReader fr = new FileReader(file);
